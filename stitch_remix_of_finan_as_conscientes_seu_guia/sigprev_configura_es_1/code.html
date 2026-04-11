@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Configurações - SIGPREV</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#c1ecd4",
+                    "primary-container": "#1b4332",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#aeeecb",
+                    "tertiary-fixed": "#ffdea9",
+                    "surface-bright": "#f8f9fa",
+                    "inverse-primary": "#a5d0b9",
+                    "error": "#ba1a1a",
+                    "tertiary": "#342300",
+                    "surface-variant": "#e1e3e4",
+                    "on-surface-variant": "#414844",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#0e5138",
+                    "secondary": "#2c694e",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "on-primary-container": "#86af99",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed": "#002114",
+                    "tertiary-fixed-dim": "#ffba27",
+                    "surface-tint": "#3f6653",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-dim": "#d9dadb",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "primary": "#012d1d",
+                    "on-error": "#ffffff",
+                    "outline": "#717973",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#002114",
+                    "on-secondary-container": "#316e52",
+                    "tertiary-container": "#503700",
+                    "primary-fixed-dim": "#a5d0b9",
+                    "on-tertiary-fixed-variant": "#5e4100",
+                    "secondary-fixed-dim": "#95d4b3",
+                    "secondary-fixed": "#b1f0ce",
+                    "outline-variant": "#c1c8c2",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f8f9fa",
+                    "surface-container-high": "#e7e8e9",
+                    "on-tertiary-fixed": "#271900",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary-container": "#d89b00",
+                    "surface-container-low": "#f3f4f5",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container": "#edeeef",
+                    "surface": "#f8f9fa",
+                    "on-background": "#191c1d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-emerald-50/80 dark:bg-emerald-950/80 backdrop-blur-md shadow-sm dark:shadow-none flex justify-between items-center px-6 h-16 w-full max-w-full">
+<div class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50">SIGPREV</div>
+<div class="flex items-center gap-4">
+<button class="text-emerald-700/60 hover:text-emerald-800 transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-emerald-700/60 hover:text-emerald-800 transition-colors">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+</button>
+<img alt="Avatar do Usuário" class="w-8 h-8 rounded-full border border-emerald-100" data-alt="professional headshot of a person in business attire with a neutral soft studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0rBf-f-ok1ju0emh1Cl94VO_l3YMk-rn_6iVUbCtJ6ywNKgPtKbpStr41LxUxE37em40g3mFHEZxUi54jHEGnTmtDoz4jBYLyfx470WVxpQ2qI7hjFonXkaI7yZX8_8odikrnMhTdfl0nexZksoLkTfwLQ8OzPso95InpxitsOGKyjKh_mu0mAOOMsJE0KIHo_QUEfZDzwufXfYVwSMVIzqozn6Zcj7m3UJOxPdk7BNlWLt76pDNlbpupsB-Y7YoKJVW81EYET8ON"/>
+</div>
+</nav>
+<!-- Side Navigation Bar (Desktop) -->
+<aside class="h-screen w-64 hidden lg:flex flex-col fixed left-0 border-r border-emerald-100/20 bg-emerald-50 dark:bg-emerald-950 py-8 px-4 gap-4">
+<div class="px-2 mb-8">
+<h2 class="text-xl font-black text-emerald-900 dark:text-emerald-50">SIGPREV</h2>
+<p class="text-[10px] font-semibold tracking-widest text-emerald-800/50 uppercase">Editorial Ledger</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-800/70 hover:bg-emerald-100 hover:text-emerald-900 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-semibold text-sm">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-800/70 hover:bg-emerald-100 hover:text-emerald-900 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-semibold text-sm">Histórico</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-800/70 hover:bg-emerald-100 hover:text-emerald-900 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="ads_click">ads_click</span>
+<span class="font-semibold text-sm">Metas</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-800/70 hover:bg-emerald-100 hover:text-emerald-900 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="font-semibold text-sm">Relatórios</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-800/70 hover:bg-emerald-100 hover:text-emerald-900 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+<span class="font-semibold text-sm">Planos</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-emerald-900 text-white shadow-lg shadow-emerald-900/20 translate-x-1 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-semibold text-sm">Configurações</span>
+</a>
+</nav>
+<div class="mt-auto">
+<button class="w-full bg-primary-container text-on-primary-container font-bold py-4 rounded-xl shadow-lg shadow-emerald-950/10 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                Novo Investimento
+            </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:ml-64 pt-24 px-6 md:px-12 max-w-6xl mx-auto">
+<header class="mb-12">
+<h1 class="text-4xl font-extrabold tracking-tight text-primary mb-2">Configurações</h1>
+<p class="text-on-surface-variant font-medium">Gerencie suas preferências de segurança e visualização de dados.</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Profile & Security -->
+<div class="md:col-span-7 space-y-8">
+<!-- Profile Section -->
+<section class="bg-surface-container-lowest rounded-[32px] p-8 shadow-sm border border-emerald-50/50">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary-container p-2 bg-primary-fixed rounded-xl" data-icon="person">person</span>
+<h2 class="text-xl font-bold tracking-tight text-primary">Perfil do Usuário</h2>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+<div class="relative group">
+<img alt="Foto de perfil" class="w-24 h-24 rounded-[24px] object-cover ring-4 ring-emerald-50" data-alt="close up of a professional man in a dark green blazer with a soft grey studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAElZQI9Ty7yEc9RLdpplQi8ZCwY9J_YG7vkNgZ9MJ695c5UdS3dfdmtFDo3CHrfDCsvgy9ky_GT-HE5oPiRYXrDWEQ07J4H0YrCI_lxuGgmhp1OuoAZZPzC5qyejf8Q52g058OqvZqahktQfAmyd8bXNmv3lO50n9hXNgs5prXTBuy8pK0mb7nm1KFuxM5oDh5d2t3ovLZAcHK4Iuiwn4R9gl5imNBCu2qAiTmJwiBIMT7OLfHPa-sri_3jYlt4nWgmw9lJTbFJWF4"/>
+<button class="absolute -bottom-2 -right-2 bg-primary text-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</button>
+</div>
+<div class="flex-1 w-full space-y-4">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant opacity-70">Nome Completo</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-semibold" type="text" value="Ricardo Oliveira Sampaio"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant opacity-70">E-mail Corporativo</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-semibold" type="email" value="r.sampaio@sigprev.com.br"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Security Section -->
+<section class="bg-surface-container-lowest rounded-[32px] p-8 shadow-sm border border-emerald-50/50">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary-container p-2 bg-primary-fixed rounded-xl" data-icon="security">security</span>
+<h2 class="text-xl font-bold tracking-tight text-primary">Segurança</h2>
+</div>
+<div class="space-y-6">
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-2xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="lock">lock</span>
+<div>
+<p class="font-bold text-on-surface">Alterar Senha</p>
+<p class="text-xs text-on-surface-variant">Última alteração há 3 meses</p>
+</div>
+</div>
+<button class="text-sm font-bold text-secondary hover:underline">Atualizar</button>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-2xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="verified_user">verified_user</span>
+<div>
+<p class="font-bold text-on-surface">Autenticação em Duas Etapas (2FA)</p>
+<p class="text-xs text-on-surface-variant text-emerald-600 font-semibold">Ativado via Aplicativo</p>
+</div>
+</div>
+<button class="text-sm font-bold text-secondary hover:underline">Configurar</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Preferences -->
+<div class="md:col-span-5">
+<section class="bg-surface-container-lowest rounded-[32px] p-8 shadow-sm border border-emerald-50/50 sticky top-24">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary-container p-2 bg-primary-fixed rounded-xl" data-icon="notifications_active">notifications_active</span>
+<h2 class="text-xl font-bold tracking-tight text-primary">Preferências de Alertas</h2>
+</div>
+<div class="space-y-8">
+<div class="flex items-center justify-between">
+<div class="max-w-[70%]">
+<p class="font-bold text-on-surface">Limite de gastos</p>
+<p class="text-xs text-on-surface-variant">Notificar quando atingir 80% do teto mensal estabelecido.</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="max-w-[70%]">
+<p class="font-bold text-on-surface">Economia semanal</p>
+<p class="text-xs text-on-surface-variant">Relatório de performance de poupança todas as segundas.</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="max-w-[70%]">
+<p class="font-bold text-on-surface">Relatórios Trimestrais</p>
+<p class="text-xs text-on-surface-variant">Análise editorial profunda consolidada via e-mail.</p>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</div>
+<div class="pt-6 mt-8 border-t border-surface-container-high">
+<button class="text-error font-bold text-sm flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[18px]" data-icon="delete_forever">delete_forever</span>
+                                Excluir Conta
+                            </button>
+<p class="text-[10px] text-on-surface-variant mt-2">Esta ação é irreversível e apagará todos os dados do Editorial Ledger.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Fixed Footer Action Bar -->
+<div class="fixed bottom-0 left-0 lg:left-64 right-0 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-xl border-t border-emerald-100/10 p-6 flex justify-end items-center z-40 shadow-[0_-8px_24px_-2px_rgba(25,28,29,0.06)]">
+<div class="flex gap-4">
+<button class="px-8 py-3 rounded-xl font-bold text-on-surface-variant hover:bg-surface-container-high transition-all">Cancelar</button>
+<button class="px-12 py-3 bg-primary text-white rounded-xl font-bold shadow-lg shadow-emerald-950/20 hover:scale-[1.02] active:scale-95 transition-all">Salvar Alterações</button>
+</div>
+</div>
+<!-- Mobile Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex lg:hidden justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-emerald-950/90 backdrop-blur-xl rounded-t-3xl border-t border-emerald-100/10 shadow-[0_-8px_24px_-2px_rgba(25,28,29,0.06)]">
+<a class="flex flex-col items-center justify-center text-emerald-800/50 dark:text-emerald-400/50 p-2" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-[10px] uppercase tracking-widest font-bold">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 dark:text-emerald-400/50 p-2" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-inter text-[10px] uppercase tracking-widest font-bold">Histórico</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 dark:text-emerald-400/50 p-2" href="#">
+<span class="material-symbols-outlined" data-icon="ads_click">ads_click</span>
+<span class="font-inter text-[10px] uppercase tracking-widest font-bold">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-900 text-emerald-50 rounded-2xl p-2 min-w-[64px] scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-inter text-[10px] uppercase tracking-widest font-bold">Mais</span>
+</a>
+</nav>
+<script src="../sigprev-navigation.js"></script>
+</body></html>

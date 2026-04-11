@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Configurações e Alertas - SIGPREV</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary": "#342300",
+                    "surface-variant": "#e1e3e4",
+                    "primary-container": "#1b4332",
+                    "on-secondary-container": "#316e52",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#c1ecd4",
+                    "tertiary-fixed": "#ffdea9",
+                    "surface": "#f8f9fa",
+                    "on-surface-variant": "#414844",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed": "#b1f0ce",
+                    "primary-fixed-dim": "#a5d0b9",
+                    "inverse-primary": "#a5d0b9",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#d89b00",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#271900",
+                    "on-secondary-fixed-variant": "#0e5138",
+                    "tertiary-fixed-dim": "#ffba27",
+                    "secondary-fixed-dim": "#95d4b3",
+                    "secondary": "#2c694e",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "on-primary-fixed": "#002114",
+                    "tertiary-container": "#503700",
+                    "on-surface": "#191c1d",
+                    "on-secondary-fixed": "#002114",
+                    "surface-tint": "#3f6653",
+                    "secondary-container": "#aeeecb",
+                    "on-background": "#191c1d",
+                    "inverse-on-surface": "#f0f1f2",
+                    "primary": "#012d1d",
+                    "surface-container": "#edeeef",
+                    "on-tertiary-fixed-variant": "#5e4100",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c1c8c2",
+                    "outline": "#717973",
+                    "on-primary-container": "#86af99",
+                    "surface-dim": "#d9dadb",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e7e8e9",
+                    "background": "#f8f9fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-emerald-950/80 backdrop-blur-md sticky top-0 z-50 shadow-sm dark:shadow-none flex justify-between items-center px-6 py-4 w-full max-w-full">
+<div class="text-2xl font-extrabold text-emerald-900 dark:text-emerald-100 tracking-tighter">SIGPREV</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-emerald-600/70 dark:text-emerald-400/70 cursor-pointer hover:text-emerald-700 transition-colors" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-emerald-600/70 dark:text-emerald-400/70 cursor-pointer hover:text-emerald-700 transition-colors" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="bg-emerald-50 dark:bg-emerald-900/20 h-screen w-64 fixed left-0 top-0 hidden lg:flex flex-col p-6 gap-2 pt-24 z-40">
+<div class="mb-8">
+<div class="text-xl font-black text-emerald-900 dark:text-emerald-50">SIGPREV</div>
+<div class="text-xs text-emerald-700/60 font-semibold tracking-wide uppercase">Editorial Ledger</div>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 text-emerald-700/60 dark:text-emerald-400/60 font-semibold tracking-wide hover:bg-emerald-100/50 transition-transform translate-x-1" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span> Dashboard
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-emerald-700/60 dark:text-emerald-400/60 font-semibold tracking-wide hover:bg-emerald-100/50" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span> Histórico
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-emerald-700/60 dark:text-emerald-400/60 font-semibold tracking-wide hover:bg-emerald-100/50" href="#">
+<span class="material-symbols-outlined" data-icon="ads_click">ads_click</span> Metas
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-emerald-700/60 dark:text-emerald-400/60 font-semibold tracking-wide hover:bg-emerald-100/50" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span> Relatórios
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-emerald-700/60 dark:text-emerald-400/60 font-semibold tracking-wide hover:bg-emerald-100/50" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span> Planos
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-emerald-100 dark:bg-emerald-800/40 text-emerald-900 dark:text-emerald-50 rounded-xl font-semibold tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span> Configurações
+                </a>
+</nav>
+<div class="mt-auto border-t border-emerald-100/20 pt-6">
+<a class="flex items-center gap-3 px-4 py-3 text-emerald-700/60 hover:bg-emerald-100/50 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span> Suporte
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-emerald-700/60 hover:bg-emerald-100/50 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span> Sair
+                </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 lg:ml-64 p-6 md:p-12 bg-surface">
+<header class="max-w-4xl mx-auto mb-12">
+<h1 class="text-4xl font-extrabold text-primary tracking-tight mb-2">Configurações</h1>
+<p class="text-on-surface-variant font-body">Gerencie sua conta, preferências de alertas e segurança do seu editorial financeiro.</p>
+</header>
+<div class="max-w-4xl mx-auto space-y-8">
+<!-- Profile Section (Bento Grid Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-1 bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center">
+<div class="relative group">
+<img alt="Avatar" class="w-32 h-32 rounded-full object-cover shadow-md mb-4 border-4 border-surface-container-lowest" data-alt="professional corporate headshot of a person with friendly expression in bright office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAw7JiGYa64YP7RDH2M5fWt5a3VGPJRDC0smtrY-U2MyBhfnctIAKf3vBlqv-_fQLNDST8Dkq0V-ZoPA8Bt3qaM54ZTRVqWdnQ4pgyqULDwAOC3yol9mAO9nRaf2IqgSiozooF5vKrof-cRsex-iJHbPTWHLuuVTtYbXtwFVctE7HcR8pVD693JxtdA2O_ijEEGg-gdpAcgemATLsdPgIKBd5okRQpgjYkO962Qqfw2Sl7mDNT7OafPs9DO60rE8LBvotnMjQYjA2q"/>
+<button class="absolute bottom-4 right-0 bg-primary text-on-primary p-2 rounded-full shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</button>
+</div>
+<h2 class="text-xl font-bold text-primary">Adriano Silveira</h2>
+<p class="text-on-surface-variant text-sm mb-4">Premium Member desde 2022</p>
+<span class="bg-secondary/10 text-secondary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Editor-Chefe</span>
+</div>
+<div class="md:col-span-2 bg-surface-container-lowest rounded-2xl p-8 shadow-sm">
+<h3 class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="person">person</span> Informações do Perfil
+                        </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Nome Completo</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" type="text" value="Adriano Silveira"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">E-mail</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" type="email" value="adriano.silveira@exemplo.com.br"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Telefone</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" type="text" value="+55 (11) 98877-6655"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Idioma</label>
+<select class="w-full bg-surface-container-highest border-none rounded-md px-4 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all">
+<option>Português (Brasil)</option>
+<option>English (US)</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- Alertas e Notificações (Card List Style) -->
+<section class="bg-surface-container-low rounded-2xl p-1 overflow-hidden">
+<div class="bg-surface-container-lowest p-8">
+<h3 class="text-lg font-bold text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="notifications_active">notifications_active</span> Preferências de Alertas
+                        </h3>
+<p class="text-on-surface-variant text-sm mb-8">Personalize como e quando o SIGPREV deve notificar seu progresso financeiro.</p>
+<div class="space-y-6">
+<!-- Switch Component 1 -->
+<div class="flex items-center justify-between py-4">
+<div>
+<h4 class="font-bold text-primary">Alertas de Limite de Gastos</h4>
+<p class="text-sm text-on-surface-variant">Notificar quando atingir 80% do orçamento mensal definido.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Switch Component 2 -->
+<div class="flex items-center justify-between py-4">
+<div>
+<h4 class="font-bold text-primary">Dicas de Economia Semanais</h4>
+<p class="text-sm text-on-surface-variant">Receba curadorias editoriais sobre como otimizar seus investimentos.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Switch Component 3 -->
+<div class="flex items-center justify-between py-4">
+<div>
+<h4 class="font-bold text-primary">Relatórios de Metas</h4>
+<p class="text-sm text-on-surface-variant">Confirmações diárias sobre a evolução de suas metas de curto prazo.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Card Footer Shift -->
+<div class="bg-surface-container-high px-8 py-4 flex justify-end">
+<button class="text-sm font-bold text-secondary hover:underline transition-all">Restaurar padrões de fábrica</button>
+</div>
+</section>
+<!-- Segurança (Minimalist) -->
+<section class="bg-surface-container-lowest rounded-2xl p-8 shadow-sm">
+<h3 class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="security">security</span> Segurança e Privacidade
+                    </h3>
+<div class="space-y-4">
+<button class="w-full flex items-center justify-between p-4 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="lock">lock</span>
+</div>
+<div class="text-left">
+<span class="block font-bold text-primary">Alterar Senha</span>
+<span class="text-xs text-on-surface-variant">Última alteração há 3 meses</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary/5 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="two_factor_authentication">authenticator</span>
+</div>
+<div class="text-left">
+<span class="block font-bold text-primary">Autenticação em Duas Etapas</span>
+<span class="text-xs text-secondary font-semibold">Ativado</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 rounded-xl hover:bg-error/5 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-error/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-error" data-icon="delete_forever">delete_forever</span>
+</div>
+<div class="text-left">
+<span class="block font-bold text-error">Excluir Conta</span>
+<span class="text-xs text-on-surface-variant">Remover permanentemente todos os dados</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-error group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+<div class="flex justify-end gap-4 py-8">
+<button class="px-8 py-3 rounded-xl text-primary font-bold hover:bg-surface-container-low transition-all">Descartar</button>
+<button class="px-8 py-3 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold shadow-lg hover:scale-[0.98] transition-transform">Salvar Alterações</button>
+</div>
+</div>
+</main>
+</div>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 lg:hidden border-t border-emerald-100/10 bg-white/90 dark:bg-emerald-950/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] flex justify-around items-center px-4 pb-6 pt-2">
+<a class="flex flex-col items-center justify-center text-emerald-800/50 dark:text-emerald-200/50 py-2 px-4" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 dark:text-emerald-200/50 py-2 px-4" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest mt-1">Histórico</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 dark:text-emerald-200/50 py-2 px-4" href="#">
+<span class="material-symbols-outlined" data-icon="track_changes">track_changes</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest mt-1">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-900 dark:bg-emerald-100 text-emerald-50 dark:text-emerald-900 rounded-2xl py-2 px-4" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest mt-1">Mais</span>
+</a>
+</nav>
+<script src="../sigprev-navigation.js"></script>
+</body></html>

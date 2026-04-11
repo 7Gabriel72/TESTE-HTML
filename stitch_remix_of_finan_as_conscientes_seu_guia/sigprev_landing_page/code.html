@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SIGPREV | Recupere o controle do seu dinheiro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#503700",
+                        "surface-tint": "#3f6653",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary-fixed-dim": "#ffba27",
+                        "on-secondary-fixed-variant": "#0e5138",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "secondary": "#2c694e",
+                        "on-surface-variant": "#414844",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "on-secondary-fixed": "#002114",
+                        "outline": "#717973",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#5e4100",
+                        "surface": "#f8f9fa",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-low": "#f3f4f5",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#86af99",
+                        "background": "#f8f9fa",
+                        "tertiary-fixed": "#ffdea9",
+                        "on-primary-fixed": "#002114",
+                        "surface-container-highest": "#e1e3e4",
+                        "outline-variant": "#c1c8c2",
+                        "on-surface": "#191c1d",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#316e52",
+                        "surface-variant": "#e1e3e4",
+                        "on-background": "#191c1d",
+                        "inverse-primary": "#a5d0b9",
+                        "on-tertiary-container": "#d89b00",
+                        "inverse-surface": "#2e3132",
+                        "primary": "#012d1d",
+                        "surface-dim": "#d9dadb",
+                        "secondary-fixed": "#b1f0ce",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#342300",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#1b4332",
+                        "surface-container": "#edeeef",
+                        "on-tertiary-fixed": "#271900",
+                        "secondary-container": "#aeeecb",
+                        "surface-container-high": "#e7e8e9",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#95d4b3",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#c1ecd4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #012D1D 0%, #1B4332 100%);
+        }
+        .glass-header {
+            backdrop-filter: blur(20px);
+            background-color: rgba(248, 249, 250, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-white/80 backdrop-blur-md text-emerald-900 font-manrope font-bold text-lg tracking-tight docked full-width top-0 sticky z-50 shadow-sm flex justify-between items-center px-6 py-4 w-full max-w-full">
+<div class="text-2xl font-extrabold text-emerald-900 tracking-tighter">SIGPREV</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-emerald-900 font-bold hover:text-emerald-700 transition-colors" href="#">Início</a>
+<a class="text-emerald-600/70 hover:text-emerald-700 transition-colors" href="#funcionalidades">Funcionalidades</a>
+<a class="text-emerald-600/70 hover:text-emerald-700 transition-colors" href="#educacional">Educação</a>
+<a class="text-emerald-600/70 hover:text-emerald-700 transition-colors" href="#planos">Planos</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-emerald-900">notifications</button>
+<button class="material-symbols-outlined text-emerald-900">account_circle</button>
+<button class="md:hidden material-symbols-outlined">menu</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-20 pb-32 px-6 lg:px-24 bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 space-y-8 z-10">
+<h1 class="font-headline font-extrabold text-5xl lg:text-7xl text-primary leading-tight tracking-tighter">
+                        Recupere o controle do seu dinheiro
+                    </h1>
+<p class="text-on-surface-variant text-xl max-w-lg leading-relaxed">
+                        O sistema inteligente que te ajuda a vencer o consumo impulsivo e planejar o futuro com autoridade editorial e precisão financeira.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-emerald-900/20 transition-all transform hover:scale-105 active:scale-95">
+                            Começar agora
+                        </button>
+<button class="border-2 border-primary/10 text-primary px-8 py-4 rounded-xl font-semibold hover:bg-surface-container-low transition-all">
+                            Conhecer planos
+                        </button>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-[40px] rotate-3 blur-2xl"></div>
+<img alt="Financial Security" class="relative z-10 w-full h-auto rounded-3xl shadow-2xl" data-alt="modern minimalist 3d illustration of a glowing emerald shield protecting golden coins and financial growth bars on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd5AQ8fL9I7Ky4M0c_8RqKosSytxFJ0DPIgnveLjZ4SkIDCtFTOv1fL-1CpiFDnN-Kc0CxHD0u5r8D4S4RReJXr6DecHRb1PsdxsQK7BjOCb3kXx4esZ3y-owFu7q-9BQyzkTjLRSeUFnW5s3YmHG285WiNGhopkyueHspxrIAXzcIgwmo67_s6aR_BPq8hm5_qKF7WHyRVVcZZgFK3eMiS79HXhWvqzKEBW4-0s1hDW8afEWKr4pXzw6FFKi1tb-J8UiTQ_thHP2w"/>
+</div>
+</div>
+</section>
+<!-- Strategic Carousel (Modern Cards Layout) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow group">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">visibility</span>
+<h3 class="font-headline font-bold text-xl mb-3 text-primary">Entenda seus gastos</h3>
+<p class="text-on-surface-variant">Veja para onde cada centavo vai com categorização automática e inteligente.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim mb-6 block">warning</span>
+<h3 class="font-headline font-bold text-xl mb-3 text-primary">Alerta Anti-Impulso</h3>
+<p class="text-on-surface-variant">Receba notificações que te fazem pensar duas vezes antes de clicar em comprar.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">flag</span>
+<h3 class="font-headline font-bold text-xl mb-3 text-primary">Metas Reais</h3>
+<p class="text-on-surface-variant">Transforme seus sonhos em planos alcançáveis com cronogramas precisos.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block">analytics</span>
+<h3 class="font-headline font-bold text-xl mb-3 text-primary">Saúde Financeira</h3>
+<p class="text-on-surface-variant">Relatórios que explicam seu comportamento ao invés de apenas mostrar números.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section (Bento Grid Style) -->
+<section class="py-32 px-6 bg-surface" id="funcionalidades">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline font-extrabold text-4xl text-primary mb-4 tracking-tight">Potencialize seu patrimônio</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Funcionalidades desenhadas para quem busca clareza absoluta na gestão editorial das suas finanças.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- High Impact Benefit -->
+<div class="md:col-span-2 bg-primary-container text-on-primary-container p-12 rounded-[32px] flex flex-col justify-between overflow-hidden relative group">
+<div class="z-10">
+<span class="material-symbols-outlined text-5xl mb-8">payments</span>
+<h3 class="text-3xl font-headline font-bold mb-4">Controle de Gastos</h3>
+<p class="text-lg opacity-80 max-w-md">Uma interface de livro-razão digital que elimina a confusão e traz a elegância de volta para suas planilhas.</p>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-secondary rounded-full blur-3xl opacity-20"></div>
+</div>
+<div class="bg-surface-container-high p-10 rounded-[32px]">
+<span class="material-symbols-outlined text-4xl text-error mb-6">verified_user</span>
+<h3 class="text-xl font-headline font-bold mb-3 text-primary">Prevenção de Dívidas</h3>
+<p class="text-on-surface-variant">Algoritmos que detectam padrões de risco antes que eles se tornem problemas reais.</p>
+</div>
+<div class="bg-surface-container-high p-10 rounded-[32px]">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">update</span>
+<h3 class="text-xl font-headline font-bold mb-3 text-primary">Saldo em Tempo Real</h3>
+<p class="text-on-surface-variant">Sincronização bancária segura e instantânea para uma visão 360 do seu dinheiro.</p>
+</div>
+<div class="bg-surface-container-high p-10 rounded-[32px]">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">bar_chart</span>
+<h3 class="text-xl font-headline font-bold mb-3 text-primary">Relatórios Visuais</h3>
+<p class="text-on-surface-variant">Gráficos editoriais que transformam dados complexos em histórias compreensíveis.</p>
+</div>
+<div class="bg-surface-container-high p-10 rounded-[32px]">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">psychology</span>
+<h3 class="text-xl font-headline font-bold mb-3 text-primary">Dicas Personalizadas</h3>
+<p class="text-on-surface-variant">Conselhos baseados no seu perfil psicológico de consumo para economizar mais.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Educational Section -->
+<section class="py-32 px-6 bg-surface-container-low overflow-hidden" id="educacional">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2">
+<img alt="Psicologia do Consumo" class="rounded-[40px] shadow-xl border border-white/20" data-alt="conceptual photo of a digital screen reflecting neon advertising lights onto a person's contemplative face in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1LHXE75yqMpu39INkZERCZ8Kl9uulZCBPBkFjpMIK8n_0hOoB19J76YupJ3x9E9laZMlNoJGd_Q6nZkid8BhkhBwx-MB0mNALE2Ryf5dFq81J-ClYnpnon0MSrpsLAfd54rNqJy0eO4BFmh_hcXlhk-lYGIOzu8IpCfGbb8RwrNHLsNPJpuCXx7fP8YPXRDZ9fIHBg6mHa_kBl_XXzc0lLbPsEjvmlu5mXXCaG6O9hUriOQMdJcijNOOEVeHOjs3U8uUWm8dpUe7o"/>
+</div>
+<div class="lg:w-1/2 space-y-8">
+<h2 class="font-headline font-extrabold text-4xl text-primary leading-tight">Por que o impulso te trava?</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>
+                            Vivemos em uma era de bombardeio constante. Algoritmos de redes sociais e anúncios personalizados são projetados para explorar suas vulnerabilidades emocionais e gatilhos de dopamina.
+                        </p>
+<p>
+                            O <strong>SIGPREV</strong> atua como um escudo cognitivo. Nós não apenas bloqueamos a transação; nós educamos seu cérebro a identificar o "ruído do marketing" antes que ele esvazie sua conta bancária.
+                        </p>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                            Ler guia completo de saúde financeira
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant/10 py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="text-2xl font-extrabold text-emerald-900 tracking-tighter mb-6">SIGPREV</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            A nova era da gestão financeira editorial. Transformando dados frios em decisões inteligentes e prósperas.
+                        </p>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Produto</h4>
+<ul class="space-y-4 text-on-surface-variant text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Funcionalidades</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Segurança</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Metodologia</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Educação</h4>
+<ul class="space-y-4 text-on-surface-variant text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Guias</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Webinars</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Suporte</h4>
+<ul class="space-y-4 text-on-surface-variant text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contato</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacidade</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant/60">
+<p>© 2024 SIGPREV Editorial Ledger. Todos os direitos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">LinkedIn</a>
+<a class="hover:text-primary" href="#">Instagram</a>
+<a class="hover:text-primary" href="#">Twitter</a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="fixed bottom-0 w-full z-50 lg:hidden border-t border-emerald-100/10 bg-white/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] flex justify-around items-center px-4 pb-safe pt-2">
+<a class="flex flex-col items-center justify-center bg-emerald-900 text-emerald-50 rounded-2xl py-2 px-4 scale-90 duration-100" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest">Início</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 py-2 px-4 scale-90 duration-100" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest">Histórico</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 py-2 px-4 scale-90 duration-100" href="#">
+<span class="material-symbols-outlined">track_changes</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest">Metas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 py-2 px-4 scale-90 duration-100" href="#">
+<span class="material-symbols-outlined">menu</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-widest">Mais</span>
+</a>
+</nav>
+<script src="../sigprev-navigation.js"></script>
+</body></html>
